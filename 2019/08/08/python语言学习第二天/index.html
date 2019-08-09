@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>TBYboy&#39;s Studio</title>
+    <title>python语言学习第二天 · TBYboy&#39;s Studio</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -203,12 +203,23 @@
 </head>
 
     
+        <body class="post-body">
+    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/TBYboy1.github.io/" >TBYboy&#39;s Studio.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">python语言学习第二天</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/TBYboy1.github.io/>TBYboy's Studio.</a>
 </header>
@@ -220,24 +231,68 @@
 
 
 
+
+height:50vh;
 ">
     
     <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/TBYboy1.github.io/)"></div>
+    <div class="site-intro-img" style="background-image: url(/TBYboy1.github.io/img/BG2.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+            
+            python语言学习第二天
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+            
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                
+                    <div class="post-intro-read">
+                        <span>字数统计: <span class="post-count word-count">1k</span>阅读时长: <span class="post-count reading-time">3 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2019/08/08</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -338,66 +393,144 @@
 </script>        
         <img class="loading" src="/TBYboy1.github.io/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/TBYboy1.github.io/2019/08/08/python语言学习第二天/" >
-            
-                <span>python语言学习第二天</span>
-        </a>
-        <div class="abstract-content">
-             python学习            &emsp;&emsp;&emsp;           Day 2———自学python，秃头的开始相信也是变强的开始。
+            <main class="main post-page">
+    <article class="article-entry">
+        <h1 id="python学习-emsp-emsp-emsp-Day-2"><a href="#python学习-emsp-emsp-emsp-Day-2" class="headerlink" title=" python学习            &emsp;&emsp;&emsp;           Day 2"></a><font size="8"> python学习            &emsp;&emsp;&emsp;           Day 2</font></h1><p><strong><center><font size="5">———自学python，秃头的开始相信也是变强的开始。</font></center></strong></p>
+<hr>
+<h4 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a><font size="6">一、准备工作</font></h4><p>今天进入python列表的学习，python里的列表和C的数组是有些相同的，都遵循一个<strong>从零开始</strong>的原则，不同的是，python里列表的功能更强大，操作起来也更为便利。<br>&nbsp;</p>
+<h4 id="二、内容复习：“列表及其操作”"><a href="#二、内容复习：“列表及其操作”" class="headerlink" title="二、内容复习：“列表及其操作”"></a><font size="6">二、内容复习：“列表及其操作”</font></h4><h5 id="1、列表简介"><a href="#1、列表简介" class="headerlink" title="1、列表简介"></a><font color="blue"><font size="5">1、列表简介</font></font></h5><p>列表由一系列按特定顺序排列的元素组成，在python中用方括号（[ ]）来表示列表，并用逗号来分隔其中的元素。例如创建一个名字列表<strong>（后面的内容将围绕这个列表来展开）</strong>：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">names = [&apos;TBY&apos;,&apos;LSB&apos;,&apos;GCY&apos;,&apos;BF&apos;,&apos;ZYC&apos;]</span><br><span class="line">print(names)</span><br></pre></td></tr></table></figure>
 
-一、准备工作今天进入python列表的学习，python里的列表和C的数组是有些相同的，都遵循一个从零开始的原则，不同的是，python里列表的功能更强大，操作起来也更为便利。&nbsp;
-二、内容复习：“列表及其操作”1、列表简介列表由一系列按特定顺序排列的元素组成，在python中用方括号（[ ]）来表示列表，并用逗号来分隔其中的元素。例如创建一个名字列表（后面的内容将围绕这个列表来展开）：
-12names = [&a...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/08</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
+<p>得到：<img src="/TBYboy1.github.io/2019/08/08/python语言学习第二天/列表.png" title="列表"><br>这个python的列表其实和c语言中的数组是相似的，它里面元素的索引（位置）是<strong>从零开始</strong>的，也就是说，names列表中的第一个元素‘TBY’的索引是 <strong>0</strong>。当然，访问列表中的元素也如同访问数组元素，指出元素的索引即可。比如我们要访问元素‘BF’，它的索引是 <strong>3</strong>，那么我们输入</p>
+<blockquote>
+<p>print(names[3])</p>
+</blockquote>
+<p>即可输出元素‘BF’，这里的names[3]即为元素‘BF’。</p>
+<p>python同时为访问最后一个列表元素提供了一种特殊语法</p>
+<blockquote>
+<p>print(names[-1]) = print(names[4]) = 元素‘ZYC’</p>
+</blockquote>
+<p>同理，names[-2] = names列表中倒数第二个元素‘BF’。<br>&nbsp;</p>
+<h5 id="2、列表操作"><a href="#2、列表操作" class="headerlink" title="2、列表操作"></a><font color="blue"><font size="5">2、列表操作</font></font></h5><p><strong><font size="4">①. 对列表中元素进行修改、添加、删除操作 。</font></strong><br><strong>修改：</strong><br>修改列表中元素非常简单，对要修改的元素位置进行赋值操作即可</p>
+<blockquote>
+<p>names[1] = ‘YBY’</p>
+</blockquote>
+<p>即把列表中2号元素‘LSB’修改为了‘YBY’。</p>
+<p><strong>添加：</strong><br>对于在列表中添加元素，有以下俩种方法：<br>方法一：在列表末尾添加元素 ——– 借用函数append()</p>
+<blockquote>
+<p>names.append(‘LYX’)</p>
+</blockquote>
+<p>即把元素‘LYX‘添加到了列表末尾，此时names[-1] = ‘LYX’。</p>
+<p>方法二：在列表中插入元素 ——– 借用函数insert()</p>
+<blockquote>
+<p>names.insert(2,’LYX’)</p>
+</blockquote>
+<p>即把元素’LYX’插入到了列表索引为2的位子上，原来位于这个位置上及以后的元素全部向后移动一个位置。</p>
+<p><strong>删除：</strong><br>删除列表元素，有以下三种方法：<br>方法一：知道要删除的元素在列表中的位置 ——– 使用del语句</p>
+<blockquote>
+<p>del names[1]</p>
+</blockquote>
+<p>即把names中索引为 1 的元素’LSB’给删除了，此时names[1] = ‘GCY’。</p>
+<p>方法二：将元素从列表中删除，但接着使用该元素的值 ——— 借用函数pop()</p>
+<blockquote>
+<p>poped_name = names.pop(1)</p>
+</blockquote>
+<p>这个语句的解释为<strong>删除names列表中索引为 1 的元素’LSB’，并将其值赋给变量poped_name。</strong></p>
+<p><strong>注：</strong>“del”和”pop()”虽然都有删除功能，但”del”删除元素后元素再不可被使用，而”pop()”可以使用示例里的操作在删除元素的同时将其值赋给另一个变量，从而可以继续使用该元素。</p>
+<p>方法三：根据值删除元素 ——– 借助函数remove()<br>在只知道删除元素的值但不知道其在列表中的位置时，用此方法。</p>
+<blockquote>
+<p>names.remove(‘TBY’)</p>
+</blockquote>
+<p>即把列表中的元素’TBY’给删除了。<br>&nbsp;</p>
+<p><strong><font size="4">②. 组织列表。</font></strong><br>一、使用方法 sort() 对列表进行永久排序。<br>创建一个列表</p>
+<blockquote>
+<p>elements = [‘c’,’d’,’b’,’a’]</p>
+</blockquote>
+<p>若想让elements列表按字母表顺序排列则执行：</p>
+<blockquote>
+<p>elements.sort()</p>
+</blockquote>
+<p>即可得到有序列表elements = [‘a’,’b’,’c’,’d’]<br>而要倒序排列则执行：</p>
+<blockquote>
+<p>elements.sort(reverse = true)</p>
+</blockquote>
+<p>即可得到倒序列表elements = [‘d’,’c’,’b’,’a’]</p>
+<p>二、使用方法 sorted() 对列表进行临时排序<br>例如执行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">name = [&apos;c&apos;,&apos;a&apos;,&apos;d&apos;,&apos;b&apos;]</span><br><span class="line">sorted(name)</span><br><span class="line">print(name)</span><br><span class="line">print(sorted(name))</span><br><span class="line">print(name)</span><br></pre></td></tr></table></figure>
+
+<p>结果如下：</p>
+<img src="/TBYboy1.github.io/2019/08/08/python语言学习第二天/temporary.png" title="列表临时">
+
+<p>三、反转列表顺序<br>直接借助函数reverse()即可，如对name = [‘a’,’c’,’s’,’e’]执行：</p>
+<blockquote>
+<p>name.reverse()</p>
+</blockquote>
+<p>此时name变为name = [‘e’,’s’,’c’,’a’]。</p>
+<p>四、确定列表长度 ——– 借助 len() 函数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">name = [&apos;c&apos;,&apos;a&apos;,&apos;d&apos;,&apos;b&apos;]</span><br><span class="line">print(len(name))</span><br></pre></td></tr></table></figure>
+
+<p>输出结果为 <strong>4</strong>。</p>
+<hr>
+<center><font size="7" color="red">未完待续😭
+
+
+
+
+</font></center>
     </article>
+    <!-- license  -->
     
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/TBYboy1.github.io/2019/08/07/python语言学习第一天/" >
-            
-                <span>python语言学习第一天</span>
-        </a>
-        <div class="abstract-content">
-             python学习            &emsp;&emsp;&emsp;           Day 1———自学python，秃头的开始相信也是变强的开始。
-
- 一、准备工作我选择的自学教材是【美】Eric Matthes 编著的书《Python编程 从入门到实践》
-
-
-编译器是Microsoft Visual Studio 2017，个人觉得还行，可以去官网自行下载。&nbsp;
- 二、内容复习：“变量和简单数据类型”本书的 第一章是环境搭建，所以就不再多叙，直接从第二章开始。&nbsp;学习任何的语言，第一件要干的事当然都是输出简单的语句“hello world！”唠。听说编...
+        <div class="license-wrapper">
+            <p>原文作者：<a href="https://TBYboy.github.io/TBYboy1.github.io.git">TBYboy</a>
+            <p>原文链接：<a href="https://TBYboy.github.io/TBYboy1.github.io.git/2019/08/08/python语言学习第二天/">https://TBYboy.github.io/TBYboy1.github.io.git/2019/08/08/python语言学习第二天/</a>
+            <p>发表日期：<a href="https://TBYboy.github.io/TBYboy1.github.io.git/2019/08/08/python语言学习第二天/">August 8th 2019, 1:06:41 pm</a>
+            <p>更新日期：<a href="https://TBYboy.github.io/TBYboy1.github.io.git/2019/08/08/python语言学习第二天/">August 9th 2019, 5:36:24 pm</a>
+            <p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/07</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/TBYboy1.github.io/2019/08/07/python语言学习第一天/" title= "python语言学习第一天">
+                    <div class="prevTitle">python语言学习第一天</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+    <div id="lv-container" data-id="city" data-uid= MTAyMC80NTYxNC8yMjEyNQ==>
+        <script type="text/javascript">
+            (function (d, s) {
+                var j, e = d.getElementsByTagName(s)[0];
+                if (typeof LivereTower === 'function') { return; }
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+        </script>
+        <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    </div>
+
+<!-- City版安装代码已完成 -->
     
+    
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -482,6 +615,24 @@
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#python学习-emsp-emsp-emsp-Day-2"><span class="toc-number">1.</span> <span class="toc-text"> python学习                          Day 2</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#一、准备工作"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">一、准备工作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#二、内容复习：“列表及其操作”"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">二、内容复习：“列表及其操作”</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1、列表简介"><span class="toc-number">1.0.0.2.1.</span> <span class="toc-text">1、列表简介</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2、列表操作"><span class="toc-number">1.0.0.2.2.</span> <span class="toc-text">2、列表操作</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -649,6 +800,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/TBYboy1.github.io/scripts/share.js" async></script>    
      
     <script src="/TBYboy1.github.io/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/TBYboy1.github.io/live2dw/assets/shizuku.model.json"},"display":{"superSample":2,"width":400,"height":550,"position":"left","hOffset":0,"vOffset":-20},"mobile":{"show":true,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false,"tagMode":false});</script></body>
 </html>
