@@ -266,7 +266,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">790</span>阅读时长: <span class="post-count reading-time">3 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">879</span>阅读时长: <span class="post-count reading-time">4 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -397,7 +397,7 @@ height:50vh;
     <article class="article-entry">
         <h1 id="python学习-emsp-emsp-emsp-Day-5"><a href="#python学习-emsp-emsp-emsp-Day-5" class="headerlink" title=" python学习            &emsp;&emsp;&emsp;           Day 5"></a><font size="8"> python学习            &emsp;&emsp;&emsp;           Day 5</font></h1><p><strong><center><font size="5">———自学python，秃头的开始相信也是变强的开始。</font></center></strong></p>
 <hr>
-<h4 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a><font size="6">一、准备工作</font></h4><p>这以后的学习我将以例题的方式展现，不再将知识点逐一详细列出。</p>
+<h4 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a><font size="6">一、准备工作</font></h4><p>这以后的学习我将以例题的方式展现，不再将知识点逐一详细列出。今天的内容是python的<strong>字典</strong>部分。</p>
 <h4 id="二、例题"><a href="#二、例题" class="headerlink" title="二、例题"></a><font size="6">二、例题</font></h4><h5 id="例题一："><a href="#例题一：" class="headerlink" title="例题一："></a><strong><font color="gray"><font size="5">例题一：</font></font></strong></h5><p>&emsp;<strong><font size="4">使用一个字典来存储一些人喜欢的数字。请想出5个人的名字，并将这些名字用作字典中的健；想出每个人喜欢的一个数字，并将这些 数字作为值存储在字典中。打印每个人的名字和喜欢的数字。</font></strong></p>
 <p><font size="5" color="red"><strong>代码如下:</strong></font></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">man_like_numbers = &#123;&apos;TBY&apos;:5,</span><br><span class="line">                    &apos;LSB&apos;:4,</span><br><span class="line">                    &apos;BF&apos;:1,</span><br><span class="line">                    &apos;GCY&apos;:2,</span><br><span class="line">                    &apos;ZYC&apos;:7,</span><br><span class="line">                    &#125;</span><br><span class="line"></span><br><span class="line">for man in man_like_numbers:</span><br><span class="line">    print(man +&apos; &apos; + &apos;like&apos; + &apos; &apos; + str(man_like_numbers[man]))</span><br></pre></td></tr></table></figure>
@@ -418,11 +418,16 @@ height:50vh;
 <img src="/TBYboy1.github.io/2019/08/26/python语言学习第五天/3.png" title="例三">
 <p>&nbsp;</p>
 <h5 id="例题四："><a href="#例题四：" class="headerlink" title="例题四："></a><strong><font color="gray"><font size="5">例题四：</font></font></strong></h5><p>&emsp;<strong><font size="4">创建一个名为cities的字典，其中将三个城市名用作键；对于每座城市，都创建一个字典，并在其中包含该城市所属的国家、人口以及一个有关该城市的事实。在表示每座城市的字典中，应包含country、population和 fact 等键。将每座城市的名字以及有关它们的信息都打印出来。</font></strong><br><font size="5" color="red"><strong>代码如下:</strong></font></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">cities = &#123;</span><br><span class="line">    &apos;BJ&apos;:&#123;</span><br><span class="line">        &apos;country&apos;:&apos;China&apos;,</span><br><span class="line">        &apos;population&apos;:1036,</span><br><span class="line">        &apos;fact&apos;:&apos;the captial of China&apos;</span><br><span class="line">        &#125;,</span><br><span class="line"></span><br><span class="line">    &apos;YC&apos;:&#123;</span><br><span class="line">        &apos;country&apos;:&apos;China&apos;,</span><br><span class="line">        &apos;population&apos;:200,</span><br><span class="line">        &apos;fact&apos;:&apos;the captial of NX&apos;</span><br><span class="line">        &#125;,</span><br><span class="line"></span><br><span class="line">    &apos;Newyork&apos;:&#123;</span><br><span class="line">        &apos;country&apos;:&apos;American&apos;,</span><br><span class="line">        &apos;population&apos;:1023,</span><br><span class="line">        &apos;fact&apos;:&apos;the captial of the American&apos;</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">for city,city_info in cities.items():</span><br><span class="line">    print(&apos;cityname:&apos; + &apos; &apos; + city)</span><br><span class="line">    country = city_info[&apos;country&apos;]</span><br><span class="line">    population = city_info[&apos;population&apos;]</span><br><span class="line">    fact = city_info[&apos;fact&apos;]</span><br><span class="line"></span><br><span class="line">    print(&apos;\tcountry:&apos; + country)</span><br><span class="line">    print(&apos;\tpopulation:&apos; + str(population))</span><br><span class="line">    print(&apos;\tfact:&apos; + fact)</span><br><span class="line"></span><br><span class="line">    print(&apos;\n&apos;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">cities = &#123;</span><br><span class="line">    &apos;BJ&apos;:&#123;</span><br><span class="line">        &apos;country&apos;:&apos;China&apos;,</span><br><span class="line">        &apos;population&apos;:1036,</span><br><span class="line">        &apos;fact&apos;:&apos;the captial of China&apos;</span><br><span class="line">        &#125;,</span><br><span class="line"></span><br><span class="line">    &apos;YC&apos;:&#123;</span><br><span class="line">        &apos;country&apos;:&apos;China&apos;,</span><br><span class="line">        &apos;population&apos;:200,</span><br><span class="line">        &apos;fact&apos;:&apos;the captial of NX&apos;</span><br><span class="line">        &#125;,</span><br><span class="line"></span><br><span class="line">    &apos;Newyork&apos;:&#123;</span><br><span class="line">        &apos;country&apos;:&apos;American&apos;,</span><br><span class="line">        &apos;population&apos;:1023,</span><br><span class="line">        &apos;fact&apos;:&apos;the captial of the American&apos;</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">for city,city_info in cities.items():</span><br><span class="line">    print(&apos;cityname:&apos; + &apos; &apos; + city)</span><br><span class="line">    country = city_info[&apos;country&apos;]</span><br><span class="line">    population = city_info[&apos;population&apos;]</span><br><span class="line">    fact = city_info[&apos;fact&apos;]</span><br><span class="line"></span><br><span class="line">    print(&apos;\tcountry:&apos; + country)</span><br><span class="line">    print(&apos;\tpopulation:&apos; + str(population))</span><br><span class="line">    print(&apos;\tfact:&apos; + fact)</span><br></pre></td></tr></table></figure>
 
 <p><font size="5" color="red"><strong>执行结果如下:</strong> </font></p>
 <img src="/TBYboy1.github.io/2019/08/26/python语言学习第五天/4.png" title="例四">
+<p>&nbsp;</p>
+<h5 id="例题五："><a href="#例题五：" class="headerlink" title="例题五："></a><strong><font color="gray"><font size="5">例题五：</font></font></strong></h5><p>&emsp;<strong><font size="4">借助range()自动生成15个外星人，并打印出10个外星人及其属性。</font></strong><br><font size="5" color="red"><strong>代码如下:</strong></font></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">aliens = []</span><br><span class="line"></span><br><span class="line">for alien_number in range(15):</span><br><span class="line">    new_alien = &#123;&apos;color&apos;:&apos;red&apos; , &apos;size&apos;:&apos;large&apos; , &apos;speed&apos;:&apos;slow&apos;&#125;</span><br><span class="line">    aliens.append(new_alien)</span><br><span class="line"></span><br><span class="line">for alien in aliens[:10]:</span><br><span class="line">    print(&apos;\n&apos;)</span><br><span class="line">    print(alien)</span><br></pre></td></tr></table></figure>
 
+<p><font size="5" color="red"><strong>执行结果如下:</strong> </font></p>
+<img src="/TBYboy1.github.io/2019/08/26/python语言学习第五天/5.png" title="例五">
 <hr>
 <center><font size="7">今天所学到这里为止，前路漫漫，君还需继续努力！！！😀
 </font></center>
@@ -433,13 +438,18 @@ height:50vh;
             <p>原文作者：<a href="https://TBYboy.github.io/TBYboy1.github.io.git">TBYboy</a>
             <p>原文链接：<a href="https://TBYboy.github.io/TBYboy1.github.io.git/2019/08/26/python语言学习第五天/">https://TBYboy.github.io/TBYboy1.github.io.git/2019/08/26/python语言学习第五天/</a>
             <p>发表日期：<a href="https://TBYboy.github.io/TBYboy1.github.io.git/2019/08/26/python语言学习第五天/">August 26th 2019, 9:32:04 pm</a>
-            <p>更新日期：<a href="https://TBYboy.github.io/TBYboy1.github.io.git/2019/08/26/python语言学习第五天/">August 26th 2019, 10:22:28 pm</a>
+            <p>更新日期：<a href="https://TBYboy.github.io/TBYboy1.github.io.git/2019/08/26/python语言学习第五天/">August 28th 2019, 10:08:24 am</a>
             <p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
     <!-- paginator  -->
     <ul class="post-paginator">
         <li class="next">
+            
+                <div class="nextSlogan">Next Post</div>
+                <a href= "/TBYboy1.github.io/2019/08/28/python语言学习第六天/" title= "python语言学习第六天">
+                    <div class="nextTitle">python语言学习第六天</div>
+                </a>
             
         </li>
         <li class="previous">
@@ -580,7 +590,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#python学习-emsp-emsp-emsp-Day-5"><span class="toc-number">1.</span> <span class="toc-text"> python学习                          Day 5</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#一、准备工作"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">一、准备工作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#二、例题"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">二、例题</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#例题一："><span class="toc-number">1.0.0.2.1.</span> <span class="toc-text">例题一：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#例题二："><span class="toc-number">1.0.0.2.2.</span> <span class="toc-text">例题二：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#例题三："><span class="toc-number">1.0.0.2.3.</span> <span class="toc-text">例题三：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#例题四："><span class="toc-number">1.0.0.2.4.</span> <span class="toc-text">例题四：</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#python学习-emsp-emsp-emsp-Day-5"><span class="toc-number">1.</span> <span class="toc-text"> python学习                          Day 5</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#一、准备工作"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">一、准备工作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#二、例题"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">二、例题</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#例题一："><span class="toc-number">1.0.0.2.1.</span> <span class="toc-text">例题一：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#例题二："><span class="toc-number">1.0.0.2.2.</span> <span class="toc-text">例题二：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#例题三："><span class="toc-number">1.0.0.2.3.</span> <span class="toc-text">例题三：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#例题四："><span class="toc-number">1.0.0.2.4.</span> <span class="toc-text">例题四：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#例题五："><span class="toc-number">1.0.0.2.5.</span> <span class="toc-text">例题五：</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
@@ -675,9 +685,24 @@ top:50vh;
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 8
+        Total : 9
         </div>
         <!-- search  -->
         
@@ -690,6 +715,11 @@ top:50vh;
     
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/TBYboy1.github.io/2019/08/28/python语言学习第六天/" >python语言学习第六天</a>
+        </li>
     
     
         <li class="archive-post-item">
