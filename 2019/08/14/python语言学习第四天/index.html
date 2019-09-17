@@ -266,7 +266,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">918</span>阅读时长: <span class="post-count reading-time">3 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">900</span>阅读时长: <span class="post-count reading-time">3 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -432,27 +432,27 @@ height:50vh;
 <p>if <em>conditional_test：</em><br>&emsp;do something</p>
 </blockquote>
 <p>例如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">age =  19</span><br><span class="line">if (age &gt;= 18) and (age &lt; 21):</span><br><span class="line">    print(&quot;你成年了，骚年&quot;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">age =  <span class="number">19</span></span><br><span class="line"><span class="keyword">if</span> (age &gt;= <span class="number">18</span>) and (age &lt; <span class="number">21</span>):</span><br><span class="line">    print(<span class="string">"你成年了，骚年"</span>)</span><br></pre></td></tr></table></figure>
 
 <p>执行输出：</p>
 <img src="/TBYboy1.github.io/2019/08/14/python语言学习第四天/if.png" title="例子">
 
 
 <p><strong><font size="4">①. if—else语句 。</font></strong><br>在if语句中当条件测试通过时执行一个操作，并在没有通过时执行另一个操作。如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">age = 19</span><br><span class="line">if age &lt; 18 :</span><br><span class="line">    print(&apos;你还没成年&apos;)</span><br><span class="line">else:</span><br><span class="line">    print(&apos;你成年了骚年&apos;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">age = <span class="number">19</span></span><br><span class="line"><span class="keyword">if</span> age &lt; <span class="number">18</span> :</span><br><span class="line">    print(<span class="string">'你还没成年'</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">'你成年了骚年'</span>)</span><br></pre></td></tr></table></figure>
 
 <p>执行得到：</p>
 <img src="/TBYboy1.github.io/2019/08/14/python语言学习第四天/ifelse.png" title="例子">
 
 <p><strong><font size="4">②. if—elif—else语句 。</font></strong><br>用法与if—else用法类似，elif与if相同，其后面也要跟一个条件测试，当所有的if和elif测试都不成立时，else代表的剩下全部条件成立。如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">age = 63</span><br><span class="line">if age &lt; 18:</span><br><span class="line">    print(&apos;小屁孩子&apos;)</span><br><span class="line">elif age &lt; 60:</span><br><span class="line">    print(&apos;中年人&apos;)</span><br><span class="line">elif age &lt;= 70:</span><br><span class="line">    print(&apos;年长者&apos;)</span><br><span class="line">else:</span><br><span class="line">    print(&apos;老年人&apos;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">age = <span class="number">63</span></span><br><span class="line"><span class="keyword">if</span> age &lt; <span class="number">18</span>:</span><br><span class="line">    print(<span class="string">'小屁孩子'</span>)</span><br><span class="line">elif age &lt; <span class="number">60</span>:</span><br><span class="line">    print(<span class="string">'中年人'</span>)</span><br><span class="line">elif age &lt;= <span class="number">70</span>:</span><br><span class="line">    print(<span class="string">'年长者'</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">'老年人'</span>)</span><br></pre></td></tr></table></figure>
 
 <p>执行得到：</p>
 <img src="/TBYboy1.github.io/2019/08/14/python语言学习第四天/elif.png" title="例子">
 
 <p><font size="4"><strong>注：</strong>有些情况下，我们也用elif代替else来结尾，这样做的好处就是把所有可能都限定在我们要的范围之内，比单纯用else结尾要保险和可控一些。</font></p>
 <p><strong><font size="4">③. if语句对列表的操作 。</font></strong><br>在if语句中将列表名用在条件表达式中时，python将在列表至少包含一个元素的情况时返回TRUE，并在列表为空时返回FALSE。如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">names = []</span><br><span class="line">if names:</span><br><span class="line">    print(&apos;奇怪了&apos;)</span><br><span class="line">else:</span><br><span class="line">    print(&apos;names列表是空的&apos;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">names = []</span><br><span class="line"><span class="keyword">if</span> names:</span><br><span class="line">    print(<span class="string">'奇怪了'</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">'names列表是空的'</span>)</span><br></pre></td></tr></table></figure>
 
 <p>执行会得到：</p>
 <blockquote>
@@ -475,7 +475,7 @@ height:50vh;
             <p>原文作者：<a href="https://TBYboy.github.io/TBYboy1.github.io.git">TBYboy</a>
             <p>原文链接：<a href="https://TBYboy.github.io/TBYboy1.github.io.git/2019/08/14/python语言学习第四天/">https://TBYboy.github.io/TBYboy1.github.io.git/2019/08/14/python语言学习第四天/</a>
             <p>发表日期：<a href="https://TBYboy.github.io/TBYboy1.github.io.git/2019/08/14/python语言学习第四天/">August 14th 2019, 8:03:55 pm</a>
-            <p>更新日期：<a href="https://TBYboy.github.io/TBYboy1.github.io.git/2019/08/14/python语言学习第四天/">August 26th 2019, 12:36:27 pm</a>
+            <p>更新日期：<a href="https://TBYboy.github.io/TBYboy1.github.io.git/2019/08/14/python语言学习第四天/">September 17th 2019, 11:36:29 pm</a>
             <p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -763,9 +763,28 @@ top:50vh;
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 11
+        Total : 12
         </div>
         <!-- search  -->
         
@@ -778,6 +797,11 @@ top:50vh;
     
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/17</span><a class="archive-post-title" href= "/TBYboy1.github.io/2019/09/17/C-经典问题自写算法/" >C++经典问题自写算法</a>
+        </li>
     
     
         <li class="archive-post-item">
